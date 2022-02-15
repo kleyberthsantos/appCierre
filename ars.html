@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/ars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>MARKET CLOSE</title>
+</head>
+<body class="bodyArs">
+    <body class="body">
+        <header>
+          <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"><img src="/style/img/market-analysis.png" width="40px" height="30px">      Inicio</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cop.html">Mercado COP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pen.html">Mercado PEN</a>
+            </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <container class="contenedor">
+      <h1 id="titulo">Cierre Mercado Argentina</h1>
+      <div class="fomularioN activo" id="formularioN">
+        <form class="form" id="form">
+          <div id="entradaDatos">
+            <label for="abonosSinAsociar"><h5 class="titleSa" >Abonos sin asociar:</h5></label>
+            <div class="item">
+            <input id="glosasSa" type="number" step="0.01" class="form-control" placeholder="Ingresa aquí la suma de abonos sin asociar" aria-label="Card Holder" aria-describedby="basic-addon1"></div>
+            
+            <label for="abonosRetenidos"><h5 class="titleSe" >Abonos retenidos:</h5></label>
+            <div class="item">
+            <input id="glosasSe" type="number" step="0.01"  class="form-control" placeholder="Ingresa aquí la suma de abonos sin extraer" aria-label="Card Holder" aria-describedby="basic-addon1"></div>
+            
+            <label for="comisionesPendientes"><h5 class="titleetirosFallidos" >Comisiones Pendientes:</h5></label>
+            <div class="iteme">
+            <input id="retirosFallidos" type="number" step="0.01"  class="form-control" placeholder="Ingresa aquí la suma de retiros fallidos" aria-label="Card Holder" aria-describedby="basic-addon1"></div>
+            
+            <label for="saldoEnAdmin"><h5 class="titlesaldoAdmin" >Saldo en el admin:</h5></label>
+            <div class="items">
+            <input id="saldoAdmin" type="number" step="0.01"  class="form-control" placeholder="Ingresa aquí el saldo del admin" aria-label="Card Holder" aria-describedby="basic-addon1"></div>
+            
+            <label for="saldoEnBanco"><h5 class="titlesaldoBanco" >Saldo en banco:</h5></label>
+            <div class="item">
+            <input id="saldoBanco" type="number" step="0.01"  class="form-control" placeholder="Ingresa aquí el saldo del admin" aria-label="Card Holder" aria-describedby="basic-addon1"></div>
+            <br>
+            <div class="form-group col-sm-12">
+            <button type="button" class="btn btnPro btn-success btn-block" id="btnProcesar" >Procesar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="datos oculto" id="datosResultado">
+        <!-- <h2>hola</h2> -->
+        <h3>Detalle cierre del mercado Argentina</h3>
+          <table class="table" id="summaryTable">
+            <thead>
+             <tr>
+              <th scope="col">Abonos sin asociar</th>
+              <th scope="col">Abonos retenidos</th>
+              <th scope="col">Comisiones pendientes</th>
+              <th scope="col">Saldo en admin</th>
+              <th scope="col">Saldo en banco</th>
+              <th scope="col">Diferencia Bruta</th>
+              </tr>
+            </thead>
+            <br>
+            <tbody>
+
+            </tbody>
+          </table>
+          <div><button type="submit" class="btn btnGuard btn-primary btn-block" id="btnGuardar">Guardar</button>
+          </div>
+          <br>
+          <div><button type="click" class="btn btnVolver btn-secondary btn-block" id="btnVolver">volver</button>
+          </div>
+      </div>
+    </container>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- <script src="/js/sweetAlert.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
